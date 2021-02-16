@@ -1,0 +1,196 @@
+body{
+    background-image: linear-gradient(to left, #200122, #6f0000, #200122);
+  }
+
+html{
+    height: 150%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.border{
+    position: absolute;
+    height: 150%;
+    width: 100.5%;
+    top: -2.9%;
+    left: -0.5%;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+* {box-sizing: border-box}
+
+.green {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 0px 30px 30px 0px;
+    background-image: linear-gradient(to right, #7b4397, #dc2430);
+    color: white;
+    font-family: VampireWars;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 55px;
+    width: 40%;
+    z-index: 2;
+}
+
+.red {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    border-radius: 30px 0px 0px 30px;
+    background-image: linear-gradient(to left, #7b4397, #dc2430);
+    color: rgb(255, 255, 255);
+    font-family: VampireWars;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 55px;
+    width: 40%;
+    z-index: 2;
+}
+
+.red:hover .green:hover{
+    background-color: #777;
+}
+
+.tabcontent {
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 20px;
+    height: 200%;
+    width: 90%;
+    z-index: 2;
+}
+
+#Registered_Events {background-color: transparent;}
+#All_Events {background-color: transparent;}
+
+.form{
+    position: absolute;
+    left: 7.5%;
+    font-family: Isle;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.Hi{
+    position: absolute;
+    top: 10%;
+    right: 22.5%;
+    font-family: Billabong;
+    font-size: 35px;
+    color: silver;
+    z-index: 2;
+}
+
+.logout{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    font-family: Billabong;
+    font-size: 35px;
+    color: silver;
+    z-index: 2;
+}
+
+.Cart{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    z-index: 2;
+}
+
+.x{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+input[type="checkbox"]{
+    width: 30px; /*Desired width*/
+    height: 30px; /*Desired height*/
+}
+
+.loader-wrapper{
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image:linear-gradient(to right, #ff416c, #ff4b2b);
+    z-index:100;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
